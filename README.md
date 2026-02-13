@@ -111,8 +111,6 @@ In Telegram:
 | Database | aiosqlite | sqlx |
 | Scheduler | APScheduler | cron crate |
 | Memory Safety | GC | Borrow checker |
-| Binary Size | ~50MB+ (Python + deps) | ~10MB (release) |
-| Startup Time | ~1-2s | <100ms |
 
 ## License
 
