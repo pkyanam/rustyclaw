@@ -1,0 +1,26 @@
+# RustyClaw Configuration
+# Copy this file to config.yaml and fill in your details
+
+telegram:
+  token: "YOUR_BOT_TOKEN_HERE"       # Get this from @BotFather on Telegram
+  allowed_users: []                   # List of Telegram user IDs allowed to use the bot
+
+ollama:
+  host: "http://localhost:11434"      # Ollama server address
+  model: "tinyllama"                  # Model to use
+  keep_alive: -1                      # -1 = keep loaded forever
+  context_length: 4096                # Context window size
+  temperature: 0.7                    # Creativity (0.0 = deterministic, 1.0 = creative)
+
+workspace:
+  path: "./workspace"                 # Where generated code/files are saved
+
+scheduler:
+  enabled: true                       # Enable/disable the cron scheduler
+
+memory:
+  database: "./rustyclaw.db"          # SQLite database for conversation history and jobs
+  max_history: 50                     # Max conversation turns to keep in context
+
+# System prompt is loaded from soul.md
+# Edit soul.md to customize the bot's personality and instructions
